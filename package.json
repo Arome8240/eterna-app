@@ -1,0 +1,17 @@
+{
+  "name": "eterna",
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "mobile:start": "yarn workspace @eterna/listener start",
+    "creator:start": "yarn workspace @eterna/creator start",
+    "contracts:build": "yarn workspace @eterna/smart-contract forge build",
+    "backend:serve": "yarn workspace @eterna/backend serve",
+    "android": "yarn workspace @foodzap/mobile-app android",
+    "ios": "expo run:ios"
+  },
+  "license": "MIT"
+}
